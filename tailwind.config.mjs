@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+	content: [
+		'./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}',
+		"./node_modules/flowbite/**/*.js"
+	],
 	theme: {
 		extend: {
 			colors: {
@@ -8,6 +11,7 @@ export default {
 				'secondary': '#249EA0',
 				'black': '#313131',
 				'grey': '#6C6C72',
+				'cream': '#F7F7F7'
 			},
 			animation: {
 				'bounce-slow': 'bounce ease 3s infinite',
